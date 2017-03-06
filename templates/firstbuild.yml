@@ -1,0 +1,7 @@
+version: '1'
+stages:
+  gitClone:
+    type: stackroute/firstbuild/git_clone
+    input:
+      REPOSITORY_URL: "{{payload.repoUrl}}"
+      BRANCH: "{{payload.repo_ref}}"
